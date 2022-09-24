@@ -1,0 +1,53 @@
+@charset "UTF-8";/*!
+ * animate.css - https://animate.style/
+ * Version - 4.1.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2020 Animate.css
+ */
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05)
+    }
+
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05)
+    }
+
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
+
+.animate__pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out
+}
